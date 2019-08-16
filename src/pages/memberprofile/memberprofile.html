@@ -1,0 +1,25 @@
+
+
+<ion-content padding>
+	<ion-card>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 20px ; text-align: center;">Qualification </ion-label>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Qualification: </ion-label>
+			<ion-input readonly value="{{user_dat.qualification}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Running: </ion-label>
+			<ion-input readonly  value="{{user_dat.running}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Jain Education: </ion-label>
+			<ion-input readonly value="{{user_dat.jainedu}}"></ion-input>
+		</ion-item>
+	</ion-card>
+</ion-content>

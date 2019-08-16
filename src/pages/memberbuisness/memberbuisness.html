@@ -1,0 +1,32 @@
+
+
+<ion-content padding>
+	<ion-card>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 20px ; text-align: center;">Profession</ion-label>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Profession: </ion-label>
+			<ion-input readonly value="{{user_dat.buisness}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Details: </ion-label>
+			<ion-input readonly value="{{user_dat.bdetail}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Address: </ion-label>
+			<ion-input readonly value="{{user_dat.baddress}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Phone: </ion-label>
+			<ion-input readonly value="{{user_dat.officeno}}"></ion-input>
+		</ion-item>
+	</ion-card>
+
+</ion-content>

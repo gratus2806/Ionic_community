@@ -1,0 +1,90 @@
+<!--
+  Generated template for the OtherdetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+	<ion-title>Other Details</ion-title>
+	<ion-buttons end>
+		<button ion-button icon-only (click)="back()" >
+			<ion-icon name="arrow-back" style="padding: 8px;"></ion-icon>
+		</button>
+	</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-card>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Kuldevta </ion-label>
+			<ion-input type="text" name="kuldevta"  [(ngModel)]="kuldevta" ></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label floating style="color:#000;font-weight: bold; font-size: 16px;">Toda *</ion-label>
+			<ion-select [(ngModel)]="todatype">
+				<ion-option value="BANJI">BANJI</ion-option>
+				<ion-option value="BAVANIYA">BAVANIYA</ion-option>
+				<ion-option value="CHOKSI">CHOKSI</ion-option>
+				<ion-option value="HARDE">HARDE</ion-option>
+				<ion-option value="SANGHAVI/BALUVA">SANGHAVI/BALUVA</ion-option>
+				<ion-option value="KAPADA">KAPADA</ion-option>
+				<ion-option value="CHAUHAN">CHAUHAN</ion-option>
+				<ion-option value="Brother">BHUKHANCHAND JOITACHAND/SHIULAL TARACHAND</ion-option>
+				<ion-option value="RUPOOR">RUPOOR</ion-option>
+				<ion-option value="CHANDURIA">CHANDURIA</ion-option>
+				<ion-option value="MANIYAK">MANIYAK</ion-option>
+				<ion-option value="HEMA ICHHA">HEMA ICHHA</ion-option>
+				<ion-option value="KESHOV JI">KESHOV JI</ion-option>
+				<ion-option value="OTHER">OTHER</ion-option>
+			</ion-select>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label>Chanasmna Jainsangh(Lahanu) *</ion-label>
+			<ion-select [(ngModel)]="lahanu">
+				<ion-option value="YES">YES</ion-option>
+				<ion-option value="NO">NO</ion-option>
+			</ion-select>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label>Sahyog group *</ion-label>
+			<ion-select [(ngModel)]="sahyog">
+				<ion-option value="YES">YES</ion-option>
+				<ion-option value="NO">NO</ion-option>
+			</ion-select>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label>Yuva group *</ion-label>
+			<ion-select [(ngModel)]="yuva">
+				<ion-option value="YES">YES</ion-option>
+				<ion-option value="NO">NO</ion-option>
+			</ion-select>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label>Member of other Yuvak Mandal ?</ion-label>
+			<ion-select [(ngModel)]="yuvak">
+				<ion-option value="YES">YES</ion-option>
+				<ion-option value="NO">NO</ion-option>
+			</ion-select>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+	  <ion-item style="text-align:center">
+		<button  ion-button  (click)="save()" style="background-color: blue; border-radius: 5px;width: 30%;float: center;padding:20px;"><p style="color:#fff;">Next</p></button>
+	  </ion-item>
+	</ion-card>
+</ion-content>

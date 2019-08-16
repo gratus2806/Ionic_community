@@ -1,0 +1,30 @@
+	
+
+<!-- ion-header>
+  <ion-navbar>
+  	<button ion-button menuToggle>
+	    <ion-icon name="menu"></ion-icon>
+	</button>
+    <ion-title>
+    <ion-icon name ="contacts" style="color:#DC143C; "> <i style="color:#DC143C; ">P</i><i style="color: #DC143C;">rofile</i></ion-icon>  
+    </ion-title>
+    <ion-buttons end>
+		<button ion-button icon-only (click)="back()" >
+			<ion-icon name="arrow-back" style="padding: 8px;"></ion-icon>
+		</button>
+	</ion-buttons>
+  </ion-navbar>
+</ion-header> -->
+
+
+
+
+<ion-content  >
+	<ion-tabs>
+		<ion-tab [root]="tab1Root" tabTitle="Personal" tabIcon="contacts"></ion-tab> 
+		<ion-tab [root]="tab2Root" tabTitle="Residence" tabIcon="home"></ion-tab>
+		<ion-tab [root]="tab3Root" tabTitle="Buisness" tabIcon="briefcase"></ion-tab> 
+		<!-- <ion-tab [root]="tab3Root" tabTitle="Qulification" tabIcon="book"></ion-tab>  -->
+		<ion-tab [root]="tab4Root" tabTitle="Other" tabIcon="more"></ion-tab>
+	</ion-tabs>
+</ion-content>

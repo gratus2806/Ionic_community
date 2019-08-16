@@ -1,0 +1,7 @@
+{
+  "name": "community",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

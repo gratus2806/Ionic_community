@@ -1,0 +1,59 @@
+<ion-content padding>
+	<ion-grid>
+		<ion-row  *ngFor="let user_dat of user_data">
+			
+				<ion-col col-5  >
+						<ion-item>
+							<img  src="http://members.chanasma.org/photo/{{user_dat.photo_src}}"  style=" width:100px;height:120px;"/>
+						</ion-item>
+				</ion-col>
+
+				<ion-col col-7 style=" ">
+						<ion-input readonly style="color:#FF4500;font-weight: bold;font-size: 14px ;margin-top: 4px; text-align: center;" value="{{user_dat.name}}"></ion-input>
+						<ion-input readonly *ngIf= "user_dat.dob.date!='' " value="{{user_dat.dob.date | date:'dd MMM yyyy'}}" ></ion-input>
+						<ion-input readonly style="color:#00CDCD;" value="{{user_dat.mobile_no}}"></ion-input>
+						<ion-input readonly value="{{user_dat.city1}}" ></ion-input>
+						<ion-input style="color: #2B4F81;" readonly value="{{user_dat.email}}"></ion-input>
+				</ion-col>
+		
+		</ion-row>
+	</ion-grid>
+
+	<ion-item style="">
+		<button ion-button (click)="goto()"  style="background-color: #f0ebeb; border-radius: 40px;width: 100%;float: center;height: 36px;"><p style="color:#000000;
+		border-radius: 40px;">Family Members</p></button>
+	</ion-item>
+	 <ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Gender:</ion-label>
+			<ion-input readonly  value="{{user_dat.sextype}}" ></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Marital Status:</ion-label>
+			<ion-input  readonly value="{{user_dat.maritaltype}}" ></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>	
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Blood Group:</ion-label>
+			<ion-input  readonly value="{{user_dat.bloodgroup}}" ></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Date Of Marriage: </ion-label>
+			<ion-input *ngIf= "user_dat.mdob.date!='' " readonly value="{{user_dat.mdob.date | date:'dd MMM yyyy'}}" ></ion-input>
+		</ion-item>
+	</ion-card>
+	
+	
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Qualification: </ion-label>
+			<ion-input readonly style="color:#000;"  value="{{user_dat.qualification}}"></ion-input>
+		</ion-item>
+	</ion-card> 
+
+</ion-content>

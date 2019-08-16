@@ -1,0 +1,76 @@
+
+
+
+
+<ion-content padding>
+	<ion-card>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 20px ; text-align: center;">Kuldevta/Toda/Village </ion-label>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Kuldevta: </ion-label>
+			<ion-input readonly value="{{user_dat.kuldevta}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Toda: </ion-label>
+			<ion-input readonly value="{{user_dat.toda}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Village: </ion-label>
+			<ion-input readonly value="{{user_dat.village}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 20px ; text-align: center;">In-law's Details </ion-label>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Father-in-law: </ion-label>
+			<ion-input readonly value="{{user_dat.finlaw}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Mother-in-law: </ion-label>
+			<ion-input readonly value="{{user_dat.minlaw}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Village: </ion-label>
+			<ion-input readonly value="{{user_dat.inlawvillage}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 20px ; text-align: center;">Mandal Information</ion-label>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Chanasmna Jainsangh: </ion-label>
+			<ion-input readonly value="{{user_dat.lahanu}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Sahyog group: </ion-label>
+			<ion-input readonly value="{{user_dat.sahyog}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Yuva group: </ion-label>
+			<ion-input readonly value="{{user_dat.yuva}}"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item *ngFor="let user_dat of user_data">
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Other Yuvak Mandal: </ion-label>
+			<ion-input readonly value="{{user_dat.yuvak}}"></ion-input>
+		</ion-item>
+	</ion-card>
+
+</ion-content>

@@ -1,0 +1,26 @@
+
+<ion-header>
+  <ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title><i style="color:#DC143C;">Members</i><i> Info</i></ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only (click)="back()" >
+				<ion-icon name="arrow-back" style="padding: 8px;"></ion-icon>
+			</button>
+		</ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content  padding>
+  <ion-item style="">
+	<button ion-button (click)="goto()"  style="background-color: #f0ebeb; border-radius: 40px;width: 100%;float: center;height: 36px;"><p style="color:#000000;
+	border-radius: 40px;">Family Members</p></button>
+  </ion-item>
+	<ion-tabs>
+		<ion-tab [root]="tab1Root" tabTitle="Personal" tabIcon="home"></ion-tab>
+		<ion-tab [root]="tab2Root" tabTitle="Qualification" tabIcon="construct"></ion-tab>
+		<ion-tab [root]="tab3Root" tabTitle="Buisness" tabIcon="laptop"></ion-tab> 
+		<ion-tab [root]="tab4Root" tabTitle="Other" tabIcon="more"></ion-tab> 
+	</ion-tabs>
+</ion-content>

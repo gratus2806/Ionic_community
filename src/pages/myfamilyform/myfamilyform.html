@@ -1,0 +1,158 @@
+
+<ion-content >
+	<ion-row >
+		
+		<ion-item>
+			<img  src="http://members.chanasma.org/photo/{{photo_src}}"  style="align-items: center; width:200px;height:150px;margin-left: 57px; margin-top: 10px;margin-right: 71px;"/>
+		</ion-item>
+	</ion-row>
+	<ion-card>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">First Name:</ion-label>
+			<ion-input type="text" name="fname" [(ngModel)]="fname" ></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Middle Name:</ion-label>
+			<ion-input type="text" name="mname" [(ngModel)]="mname" ></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Last Name:</ion-label>
+			<ion-input  type="text" name="lname" [(ngModel)]="lname"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Gender:</ion-label>
+			<ion-input  type="text" name="sextype" [(ngModel)]="sextype" ></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Marital Status:</ion-label>
+			<ion-input type="text" name="maritaltype" [(ngModel)]="maritaltype"  ></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Blood Group:</ion-label>
+			<ion-input  type="text" name="bloodgroup" [(ngModel)]="bloodgroup" ></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Date Of Birth: </ion-label>
+			<ion-input type="text" name="dob" [(ngModel)]="dob" ></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Date Of Marriage: </ion-label>
+			<ion-input type="text" name="mdob" [(ngModel)]="mdob" ></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">City: </ion-label>
+			<ion-input  type="text" name="city" [(ngModel)]="city" ></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Mobile No: </ion-label>
+			<ion-input  type="text" name="mobile_no" [(ngModel)]="mobile_no"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Email ID: </ion-label>
+			<ion-input  type="text" name="email" [(ngModel)]="email"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Qualification: </ion-label>
+			<ion-input  type="text" name="completed" [(ngModel)]="completed"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 20px ; text-align: center;">Address </ion-label>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Address 1: </ion-label>
+			<ion-input  type="text" name="address1" [(ngModel)]="address1"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Address 2: </ion-label>
+			<ion-input  type="text" name="address2" [(ngModel)]="address2"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Address 3: </ion-label>
+			<ion-input  type="text" name="address3" [(ngModel)]="address3"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 20px ; text-align: center;">Kuldevta/Toda/Village </ion-label>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Kuldevta: </ion-label>
+			<ion-input  type="text" name="kuldevta" [(ngModel)]="kuldevta"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Toda: </ion-label>
+			<ion-input  type="text" name="todatype" [(ngModel)]="todatype"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Village: </ion-label>
+			<ion-input  type="text" name="village" [(ngModel)]="village"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 20px ; text-align: center;">In-law's Details </ion-label>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Father-in-law: </ion-label>
+			<ion-input  type="text" name="finlaw" [(ngModel)]="finlaw"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Mother-in-law: </ion-label>
+			<ion-input  type="text" name="minlaw" [(ngModel)]="minlaw"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Village: </ion-label>
+			<ion-input  type="text" name="inlawvillage" [(ngModel)]="inlawvillage"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 20px ; text-align: center;">Mandal Information</ion-label>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Chanasmna Jainsangh: </ion-label>
+			<ion-input  type="text" name="lahanu" [(ngModel)]="lahanu"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Sahyog group: </ion-label>
+			<ion-input  type="text" name="sahyog" [(ngModel)]="sahyog"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Yuva group: </ion-label>
+			<ion-input  type="text" name="yuva" [(ngModel)]="yuva" ></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Other Yuvak Mandal: </ion-label>
+			<ion-input type="text" name="yuvak" [(ngModel)]="yuvak" ></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 20px ; text-align: center;">Profession</ion-label>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Profession: </ion-label>
+			<ion-input  type="text" name="buisness" [(ngModel)]="buisness"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Details: </ion-label>
+			<ion-input  type="text" name="bdetail" [(ngModel)]="bdetail"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Address 1: </ion-label>
+			<ion-input  type="text" name="baddress1" [(ngModel)]="baddress1"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Address 2: </ion-label>
+			<ion-input  type="text" name="baddress2" [(ngModel)]="baddress2"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Phone: </ion-label>
+			<ion-input  type="text" name="officeno" [(ngModel)]="officeno"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 20px ; text-align: center;">More Information (Achievements/Updates etc...)</ion-label>
+		<ion-item>
+			<ion-input  type="text" name="achievement" [(ngModel)]="achievement"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item style="text-align:center">
+			<button  ion-button  (click)="save()" style="background-color: blue; border-radius: 5px;width: 30%;float: center;padding:20px;"><p style="color:#fff;">Update</p></button>
+		</ion-item>
+	</ion-card>
+</ion-content>
+

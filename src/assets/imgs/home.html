@@ -1,0 +1,111 @@
+<ion-header>
+	<ion-navbar>
+		<ion-buttons start>
+			<button ion-button icon-only (click)="cart()">
+				<ion-icon name="ios-cart"></ion-icon>
+			</button>
+		</ion-buttons>
+		<ion-title>Home</ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only (click)="notification()">
+				<ion-icon name="ios-notifications"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding >
+	<!--<ion-label style="font-size: 2.6em;color: #fff;" align="center">ZEAL</ion-label>-->
+		<!-- <ion-avatar >
+			<img src="assets/imgs/funshalla-logo2.jpg" class="custom-avatar1">
+		</ion-avatar> -->
+
+
+	<ion-grid  style="background-color: #F5F5F5;">
+		<ion-row>
+		  	<ion-col col-6>		
+				<img src="assets/imgs/profile.png"  style="cursor: pointer;height:120px;width:100%" class="custom-avatar" (click)="profile()">	
+				<strong><p align="left" (click)="profile()">YOUR PROFILE</p></strong>
+			</ion-col>
+			<ion-col col-6 align="right">
+				<img src="assets/imgs/funshala.jpg" style="cursor: pointer;height:120px;width:100%" class="custom-avatar" (click)="funshalla()">
+				<strong><p align="center" style="padding-left: 10px;" (click)="funshalla()">FUNSHALLA</p></strong>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-6 >
+				<img src="assets/imgs/birthdays.jpg" style="cursor: pointer;height:120px;width:100%" class="custom-avatar" (click)="birthday()">
+				<strong><p align="left" (click)="birthday()">BIRTHDAYS</p></strong>
+			</ion-col>
+			<ion-col col-6 align="right">
+				<img src="assets/imgs/turfs.jpg" style="cursor: pointer;height:120px;width:100%" class="custom-avatar" (click)="turfs()">
+				<strong><p align="center" (click)="turfs()">TURFS</p></strong>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-6 >
+				<img src="assets/imgs/picnics.jpg" style="cursor: pointer;height:120px;width:100%" class="custom-avatar" (click)="picnic()">
+				<strong><p align="left" (click)="picnic()">PICNICS</p></strong>
+			</ion-col>
+			<ion-col col-6 align="right">
+				<img src="assets/imgs/events.jpg" style="cursor: pointer;height:120px;width:100%" class="custom-avatar" (click)="event()">
+				<strong><p align="center" (click)="event()">EVENTS</p></strong>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-6 >
+				<img src="assets/imgs/timepasscafe.jpg" style="cursor: pointer;height:120px;width:100%" class="custom-avatar" (click)="option()">
+				<strong><p align="left" (click)="option()">TIME PASS CAFE</p></strong>
+			</ion-col>
+			<ion-col col-6 align="right">
+				<img src="assets/imgs/contest.jpg" style="cursor: pointer;height:120px;width:100%" class="custom-avatar" (click)="contest()">
+				<strong><p align="center" (click)="contest()">FUNSHALLA CONTEST</p></strong>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-6 >
+				<img src="assets/imgs/order.png" style="cursor: pointer;height:120px;width:100%" class="custom-avatar" (click)="order()">
+				<strong><p align="left" (click)="order()">YOUR ORDER</p></strong>
+			</ion-col>
+			<ion-col col-6 align="right">
+				<img src="assets/imgs/logout.png" style="cursor: pointer;height:120px;width:100%" class="custom-avatar" (click)="logout()">
+				<strong><p align="center" (click)="logout()">LOGOUT</p></strong>	  	
+		  	</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<h3 style="background-color: #fff;margin-top: 3.4rem;"><strong style="margin-left: 15px;">Gallery</strong></h3>
+
+	<!-- <ion-slides autoplay="5000" loop="true" speed="1000" style="padding: 0px;height:120px;margin-top: 10px;">
+		<ion-slide *ngFor="let data of Data" >
+			<img src="{{data.image}}" style="width:85px;height:80px;"/>
+			<img src="{{data.img}}" style="width:85px;height:80px;"/>
+			<img src="{{data.i}}" style="width:85px;height:80px;"/>
+		</ion-slide>
+	</ion-slides> -->
+
+	<ion-slides *ngIf="banner_data && banner_data.length" autoplay="5000" loop="true" speed="1000" style="padding: 0px;height:120px;margin-top: 10px;">
+		<ion-slide *ngFor="let ban_data of banner_data">
+			<img *ngFor="let ban_dat of ban_data" src="{{ban_dat.image_source}}" style="width:85px;height:100px;margin-right: 8px;"/>
+		</ion-slide>
+	</ion-slides>
+
+	<h3 style="background-color: #fff;"><strong style="margin-left: 15px;">Clients Testimonials</strong></h3>
+
+	<ion-slides *ngIf="testimonial_data && testimonial_data.length" autoplay="5000" class="slideroption" pager="true"   loop="true" speed="500"  style="width:100%;height:30%">
+		<ion-slide *ngFor="let test_data of testimonial_data">
+			<blockquote  style="background-color:#fff;font-size: 0.9em;margin-left: 10px;padding-left: 20px;padding-right: 20px;color: #000;text-align: justify;">"{{test_data.discription}}"</blockquote>
+			<p  style="background-color:#fff;font-size: 0.7em;color:#000;text-align: right;font-family: Georgia, serif;font-style: italic;">--&nbsp;{{test_data.customer_name}}</p>
+		</ion-slide>
+	</ion-slides>
+
+	<h3 style="background-color: #fff;"><strong style="margin-left: 15px;">Statastics From The Past</strong></h3>
+	
+	<ion-slides autoplay="5000" loop="true" speed="1000" style="padding: 0px;height:150px;margin: 0px;margin-left:70px;">
+		<ion-slide *ngFor="let number of Number" >
+			<p style="width:150px;height:auto;background-color:#fff;font-size: 40px;margin:0px;">{{number.h3}}</p>
+			<p style="width:150px;height:auto;background-color:#fff;margin:0px;">{{number.p}}</p>
+		</ion-slide>
+	</ion-slides>
+	<p style="font-size:13px;float:right;">App Developed By <a href="http://adorinfotech.com" target="_blank">Ador Infotech</a></p>
+</ion-content>

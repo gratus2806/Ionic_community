@@ -1,0 +1,54 @@
+<!--
+  Generated template for the QualificationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title><i style="color: #FF4500;">Qualification</i><i>Details</i></ion-title>
+    <ion-buttons end>
+		<button ion-button icon-only (click)="back()" >
+			<ion-icon name="arrow-back" style="padding: 8px;"></ion-icon>
+		</button>
+	</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+	<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Completed</ion-label>
+		<ion-input type="text" name="completed" [(ngModel)]="completed" ></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Running</ion-label>
+		<ion-input type="text" name="running" [(ngModel)]="running" ></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Jain Education*</ion-label>
+		<ion-input type="text" name="jainedu" [(ngModel)]="jainedu" ></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label floating style="color:#000;font-weight: bold; font-size: 18px;">Village</ion-label>
+		<ion-select [(ngModel)]="village">
+			<ion-option value="Chanasama">Chanasama</ion-option>
+		</ion-select>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item style="text-align:center">
+		<button  ion-button  (click)="save()" style="background-color: blue; border-radius: 5px;width: 30%;float: center;padding:20px;"><p style="color:#fff;">Next</p></button>
+	</ion-item>
+</ion-card>
+
+</ion-content>

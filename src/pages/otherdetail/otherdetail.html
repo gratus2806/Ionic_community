@@ -1,0 +1,147 @@
+<ion-header>
+
+  <ion-navbar>
+  	<button ion-button menuToggle>
+	    <ion-icon name="menu"></ion-icon>
+	</button>
+    <ion-title><i style="color: #FF4500;">Other</i><i>Details</i></ion-title>
+    <ion-buttons end>
+		<button ion-button icon-only (click)="back()" >
+			<ion-icon name="arrow-back" style="padding: 8px;"></ion-icon>
+		</button>
+	</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-card> 
+	<ion-label style="color:#000;font-weight: bold;font-size: 18px; text-align: center;">Qulification Detail</ion-label>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Completed</ion-label>
+		<ion-input type="text" name="completed" [(ngModel)]="completed" ></ion-input>
+	</ion-item>
+<!-- </ion-card> -->
+<!-- <ion-card> -->
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Running</ion-label>
+		<ion-input type="text" name="running" [(ngModel)]="running" ></ion-input>
+	</ion-item>
+<!-- </ion-card> -->
+<!-- <ion-card> -->
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Jain Education*</ion-label>
+		<ion-input type="text" name="jainedu" [(ngModel)]="jainedu" ></ion-input>
+	</ion-item>
+<!-- </ion-card> -->
+<!-- <ion-card> -->
+	<ion-item>
+		<ion-label style="color:#000;font-weight: bold;font-size: 16px;">Village</ion-label>
+		<ion-select [(ngModel)]="village">
+			<ion-option value="Chanasama">Chanasama</ion-option>
+		</ion-select>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-label style="color:#000;font-weight: bold;font-size: 18px;text-align: center;">InLaw Details</ion-label>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Father In-law</ion-label>
+		<ion-input type="text" name="finlaw" [(ngModel)]="finlaw" ></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Mother In-law</ion-label>
+		<ion-input type="text" name="minlaw" [(ngModel)]="minlaw" ></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Village</ion-label>
+		<ion-input type="text" name="inlawvillage" [(ngModel)]="inlawvillage"></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  stacked style="color:#000;font-weight: bold;font-size: 16px;">Achievements / Any other details about you</ion-label>
+		<ion-input type="text" name="achievement" [(ngModel)]="achievement"></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-label style="color:#000;font-weight: bold;font-size: 18px;text-align: center;">Other Details</ion-label>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Kuldevta </ion-label>
+		<ion-input type="text" name="kuldevta"  [(ngModel)]="kuldevta" ></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold; font-size: 16px;">Toda *</ion-label>
+		<ion-select [(ngModel)]="todatype">
+			<ion-option value="BANJI">BANJI</ion-option>
+			<ion-option value="BAVANIYA">BAVANIYA</ion-option>
+			<ion-option value="CHOKSI">CHOKSI</ion-option>
+			<ion-option value="HARDE">HARDE</ion-option>
+			<ion-option value="SANGHAVI/BALUVA">SANGHAVI/BALUVA</ion-option>
+			<ion-option value="KAPADA">KAPADA</ion-option>
+			<ion-option value="CHAUHAN">CHAUHAN</ion-option>
+			<ion-option value="Brother">BHUKHANCHAND JOITACHAND/SHIULAL TARACHAND</ion-option>
+			<ion-option value="RUPOOR">RUPOOR</ion-option>
+			<ion-option value="CHANDURIA">CHANDURIA</ion-option>
+			<ion-option value="MANIYAK">MANIYAK</ion-option>
+			<ion-option value="HEMA ICHHA">HEMA ICHHA</ion-option>
+			<ion-option value="KESHOV JI">KESHOV JI</ion-option>
+			<ion-option value="OTHER">OTHER</ion-option>
+		</ion-select>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label>Chanasmna Jainsangh(Lahanu) *</ion-label>
+		<ion-select [(ngModel)]="lahanu">
+			<ion-option value="YES">YES</ion-option>
+			<ion-option value="NO">NO</ion-option>
+		</ion-select>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label>Sahyog group *</ion-label>
+		<ion-select [(ngModel)]="sahyog">
+			<ion-option value="YES">YES</ion-option>
+			<ion-option value="NO">NO</ion-option>
+		</ion-select>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label>Yuva group *</ion-label>
+		<ion-select [(ngModel)]="yuva">
+			<ion-option value="YES">YES</ion-option>
+			<ion-option value="NO">NO</ion-option>
+		</ion-select>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label>Member of other Yuvak Mandal ?</ion-label>
+		<ion-select [(ngModel)]="yuvak">
+			<ion-option value="YES">YES</ion-option>
+			<ion-option value="NO">NO</ion-option>
+			<ion-input type="text" name="yuvak"  [(ngModel)]="yuvak" ></ion-input>
+		</ion-select>
+	</ion-item>
+</ion-card>
+<ion-card>
+  <ion-item style="text-align:center">
+	<button  ion-button  (click)="save()" style="background-color: blue; border-radius: 5px;width: 30%;float: center;padding:20px;padding-bottom: 55px;"><p style="color:#fff;">Next</p></button>
+  </ion-item>
+</ion-card>
+</ion-content>

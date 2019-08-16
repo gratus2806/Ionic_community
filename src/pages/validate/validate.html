@@ -1,0 +1,20 @@
+<!-- <ion-header>
+	<ion-navbar style="padding: 8px;">
+	 	<ion-title><i style="color: #FF4500;">Enter</i><i>OTP</i></ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only (click)="goBack()">
+				<ion-icon name="arrow-back" style="padding: 8px;"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+</ion-header> -->
+<ion-content padding>
+		<div id="inputs">
+			<ion-label>Please Enter OTP Send on Your MObile</ion-label>
+		  	<ion-item>
+		  		<ion-label floating>Enter OTP:</ion-label>
+		  		<ion-input  type="number" name="password" [(ngModel)]="password" ></ion-input>
+	  		</ion-item>
+		</div><br/>
+			<button ion-button full (click)="gotoHome();" color="secondary" >Confirm</button>
+</ion-content>

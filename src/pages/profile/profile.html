@@ -1,0 +1,130 @@
+
+<ion-header>
+  <ion-navbar>
+  	<button ion-button menuToggle>
+	    <ion-icon name="menu"></ion-icon>
+	</button>
+    <ion-title>
+    <ion-icon name ="contacts" style="color:#DC143C; "> <i style="color:#DC143C; ">P</i><i style="color: #DC143C;">rofile</i></ion-icon>  
+    </ion-title>
+    <ion-buttons end>
+		<button ion-button icon-only (click)="back()" >
+			<ion-icon name="arrow-back" style="padding: 8px;"></ion-icon>
+		</button>
+	</ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content  >
+	
+	<ion-card>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Title* </ion-label>
+			<ion-input type="text" name="title" [(ngModel)]="title"  ></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">First Name*</ion-label>
+			<ion-input type="text" name="fname" [(ngModel)]="fname" ></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Middle Name*</ion-label>
+			<ion-input type="text" name="father" [(ngModel)]="father"  ></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Last Name*</ion-label>
+			<ion-input type="text" name="lname" [(ngModel)]="lname" ></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Mother Name*</ion-label>
+			<ion-input type="text" [(ngModel)]="mother"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Grand Father's Name*</ion-label>
+			<ion-input type="text"name="gfather" [(ngModel)]="gfather" ></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item [(ngModel)]="dob" >
+			<ion-label style="color:#000;font-weight: bold;font-size: 16px;">Date</ion-label>
+			<ion-datetime displayFormat="YYYY/MM/DD"  [(ngModel)]="dob"></ion-datetime>
+			<input type="hidden"  name="dob" />
+			<ion-input type="text"  name="dob" ></ion-input>
+		 </ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label floating style="color:#000;font-weight: bold; font-size: 16px;">Relation *</ion-label>
+			<ion-select [(ngModel)]="relation">
+				<ion-option  value="Self">Self</ion-option>
+				<ion-option value="Father">Father</ion-option>
+				<ion-option value="Mother">Mother</ion-option>
+				<ion-option value="Husband">Husband</ion-option>
+				<ion-option value="Wife">Wife</ion-option>
+				<ion-option value="Son">Son</ion-option>
+				<ion-option value="Daughter">Daughter</ion-option>
+				<ion-option value="Brother">Brother</ion-option>
+			</ion-select>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label floating style="color:#000;font-weight: bold; font-size: 16px;">Sex *</ion-label>
+			<ion-select [(ngModel)]="sextype">
+				<ion-option value="Male">Male</ion-option>
+				<ion-option value="Female">Female</ion-option>
+			</ion-select>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label floating style="color:#000;font-weight: bold; font-size: 16px;">Marital Status *</ion-label>
+			<ion-select [(ngModel)]="maritaltype">
+				<ion-option value="Single">Single</ion-option>
+				<ion-option value="Married">Married</ion-option>
+				<ion-option value="Widow">Widow</ion-option>
+			</ion-select>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Marriage Date </ion-label>
+			<ion-input type="text" name="mdob" [(ngModel)]="mdob " placeholder="YYYY-MM-DD" ></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Mobile No* </ion-label>
+			<ion-input type="number" name="mobile" [(ngModel)]="mobile"></ion-input>
+		</ion-item>
+	</ion-card>
+	<ion-card>
+		<ion-item>
+			<ion-label floating style="color:#000;font-weight: bold; font-size: 16px;">Blood Group *</ion-label>
+			<ion-select [(ngModel)]="bloodgroup">
+				<ion-option value="O+">O+</ion-option>
+				<ion-option value="O-">O-</ion-option>
+				<ion-option value="A+">A+</ion-option>
+				<ion-option value="A-">A-</ion-option>
+				<ion-option value="B+">B+</ion-option>
+				<ion-option value="B-">B-</ion-option>
+				<ion-option value="AB+">AB+</ion-option>
+				<ion-option value="AB-">AB-</ion-option>
+			</ion-select>
+		</ion-item>
+	</ion-card>
+
+	<ion-item style="text-align:center">
+		<button  ion-button  (click)="save()" style="background-color: blue; border-radius: 5px;width: 30%;float: center;padding:20px;padding-bottom: 55px;"><p style="color:#fff;">Save</p></button>
+	</ion-item>
+</ion-content>

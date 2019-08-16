@@ -1,0 +1,57 @@
+<!--
+  Generated template for the IndexPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  	<button ion-button menuToggle>
+	    <ion-icon name="menu"></ion-icon>
+	</button>
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+		<button ion-button icon-only (click)="goBack()">
+			<ion-icon name="arrow-back"></ion-icon>
+		</button>
+	</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+	<ion-slides autoplay="1000" class="slideroption" pager="true" loop="true" speed="1000" style="padding: 0px;height:50%;width:100%;margin-top: 10px;">
+		<ion-slide *ngFor="let data of Data" style="padding: 0px;">
+			<img src="{{data.image}}" style="height:50%;"/>
+		</ion-slide>
+	</ion-slides>
+
+	<ion-card padding>
+		<h1 style="text-align:center;color:#4FBFA8;">Welcome To Chanasma</h1><br><br>
+		<p style="text-align:justify;font-size:15px;color:#000;">Our Jain community of Chanasma was originally located in North Gujarat, India. The Community is now spread all over India and Overseas, but majority members are located at Mumbai, Surat and Ahmedabad. With blessings of "Shree Bhatewa Parshwanth Bhagwan" members of the community have progressed in all aspects of life especially in Religious, Business & Education.</p><br><br>
+
+		<p style="text-align:justify;font-size:15px;color:#000;">Shree Chanasma Jain Pedhi Number : <span style="color:#4FBFA8;font-size:15px;">02734223296</span></p><br>
+
+		<p style="text-align:justify;font-size:15px;color:#000;">Dharamshala Number : Navneet Bhai <span style="color:#4FBFA8;font-size:15px;">09323881951</span></p><br>
+
+		<p style="text-align:justify;font-size:15px;color:#000;">Bhojansala Number : Satishbhai Shah <span style="color:#4FBFA8;font-size:15px;">09638532806 / 09408241980</span></p><br>
+
+	</ion-card>
+
+	<ion-card style="border:1px solid red;" padding>
+		<p style="text-align:center;font-size:15px;color:red;">AANANDO AANANDO AANANDO </p>
+		<p style="text-align:center;font-size:15px;color:red;">JYA PURV NAVANU VAAR "RUSHABHDEV PRABHU" PDHARYA HATA E SIDDHBHUMI SHETRUNJAY GIRIRAAJ NI NAVANU YATRA KRAVANO UTKRUSHT LAABH DEV-GURU KRUPA E AMARA PARIVAR NE MALYO CHHE .</p> 
+		<p style="text-align:center;font-size:15px;color:red;">NISHRA:</p> 
+		<p style="text-align:center;font-size:15px;color:red;">GACHHADHIPTI AACHARYA BHAGWANT DOLATSAGAR SURI MS.</p>
+
+		<p style="text-align:center;font-size:15px;color:red;">YATRA PRARAMBH: </p>
+		<p style="text-align:center;font-size:15px;color:red;">VIKRAM SAMVAT 2075,KARTAK SUD 15,23/11/2018</p>
+		<p style="text-align:center;font-size:15px;color:red;">KANTABEN SEVANTILAL KESHAVLAL SHAH VILASBEN SUNDARLAL SEVANTILAL SHAH</p>
+	</ion-card>
+
+	
+
+</ion-content>

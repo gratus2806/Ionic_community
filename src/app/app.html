@@ -1,0 +1,24 @@
+<ion-menu [content]="content" persistent="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title><i style="color:#DC143C;">M</i><i style="color: #DC143C;">enu</i></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    
+    <ion-list>
+      <button menuClose color="{{p.color}}" ion-item *ngFor="let p of pages" (click)="openPage(p)"><i >
+        {{p.title}}</i>
+      </button>
+      <!-- <button *ngIf= menuClose color="{{p.color}}" ion-item *ngFor="let p of pages" (click)="openPage(p)"><i >
+        {{p.title.logout}}</i>
+      </button> -->
+    </ion-list>
+   
+
+  </ion-content>
+
+</ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false" ></ion-nav>
+<!-- #content swipeBackEnabled="false" -->

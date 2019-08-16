@@ -1,0 +1,36 @@
+
+<ion-header>
+    <ion-navbar>
+  		<button ion-button menuToggle>
+	      <ion-icon name="menu"></ion-icon>
+	   	</button>
+   		<ion-title>
+        <ion-icon name ="flower" style="color:#DC143C; "> <i style="color: #DC143C;">B</i><i style="color: #DC143C;">irthday</i></ion-icon> 
+      </ion-title>
+   		<ion-buttons end>
+	    	<button ion-button icon-only (click)="back()">
+				  <ion-icon name="arrow-back"></ion-icon>
+			 </button>
+		  </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content >
+  <ion-grid  *ngFor="let bday_dat of bday_data">
+    <ion-card>
+    <ion-row floating style="font-weight: bold;font-size: 18px;" >  
+          <ion-col col-12 style="padding-left: 13px;" ><i>{{bday_dat.name}}</i><i style="color:#DC143C; "> "Happy Birthday"</i></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <!-- <ion-col col-12 *ngIf="bday_dat.photo==''" >
+        <img  src='https://www.shutterfly.com/ideas/wp-content/uploads/2016/08/50-happy-birthday-quotes-thumb.jpg' style= "width: 100%;"/>
+      </ion-col> -->
+      <ion-col col-12 *ngIf="bday_dat.photo!=''" >
+        <img  src={{bday_dat.photo_src}} style= "width: 250px; height: 214px;
+    padding-left: 40px;padding-right: 10px; padding-bottom: 37px; "/>
+      </ion-col>
+      
+    </ion-row>
+  </ion-card>
+  </ion-grid>
+</ion-content>

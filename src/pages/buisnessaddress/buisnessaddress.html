@@ -1,0 +1,85 @@
+
+<ion-header>
+
+  <ion-navbar>
+  	<button ion-button menuToggle>
+	    <ion-icon name="menu"></ion-icon>
+	</button>
+    <ion-title><i style="color: #FF4500;">Buisness</i><i>Address</i></ion-title>
+    <ion-buttons end>
+		<button ion-button icon-only (click)="back()" >
+			<ion-icon name="arrow-back" style="padding: 8px;"></ion-icon>
+		</button>
+	</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+	<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Business/Prefession :</ion-label>
+		<ion-input type="text" name="buisness" [(ngModel)]="buisness "></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Business Category :</ion-label>
+		<ion-input type="text" name="bcategory" [(ngModel)]="bcategory "></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Business Details :</ion-label>
+		<ion-input type="text" name="bdetail" [(ngModel)]="bdetail"></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Address (Line 1) :</ion-label>
+		<ion-input type="text" name="baddress1" [(ngModel)]="baddress1"></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Address (Line 2) :</ion-label>
+		<ion-input type="text" name="baddress2" [(ngModel)]="baddress2 "></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">City :</ion-label>
+		<ion-input type="text" name="bcity" [(ngModel)]="bcity"></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">State :</ion-label>
+		<ion-input type="text" name="bstate" [(ngModel)]="bstate"></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Postal Code :</ion-label>
+		<ion-input type="text" name="bpostal" [(ngModel)]="bpostal" ></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Country :</ion-label>
+		<ion-input type="text" name="bcountry" [(ngModel)]="bcountry"></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item>
+		<ion-label  style="color:#000;font-weight: bold;font-size: 16px;">Office Contact No :</ion-label>
+		<ion-input type="text" name="officeno" [(ngModel)]="officeno"></ion-input>
+	</ion-item>
+</ion-card>
+<ion-card>
+	<ion-item style="text-align:center">
+		<button  ion-button  (click)="save()" style="background-color: blue; border-radius: 5px;width: 30%;float: center;padding:20px;padding-bottom: 55px;"><p style="color:#fff;">Next</p></button>
+	</ion-item>
+</ion-card>
+
+</ion-content>

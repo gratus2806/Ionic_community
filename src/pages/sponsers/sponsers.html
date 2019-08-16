@@ -1,0 +1,81 @@
+<!--
+  Generated template for the SponsersPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  	<button ion-button menuToggle>
+	    <ion-icon name="menu"></ion-icon>
+	</button>
+    <ion-title><ion-icon name ="logo-bitcoin" style="color:##DC143C; "></ion-icon> <i style="color: #DC143C;">S</i><i style="color: #DC143C;">ponsers</i></ion-title>
+    <ion-buttons end>
+		<button ion-button icon-only (click)="goBack()">
+			<ion-icon name="arrow-back"></ion-icon>
+		</button>
+	</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-slides autoplay="1500" class="slideroption" pager="true" loop="true" speed="1000" style="padding: 0px;height:50%;width:100%;margin-top: 10px;">
+		<ion-slide *ngFor="let data of Data" style="padding: 0px;">
+			<img src="{{data.image}}" style="height:50%;"/>
+		</ion-slide>
+	</ion-slides>
+
+	<!-- <ion-slides autoplay="5000" pager="true" loop="true" speed="1000" style="padding: 0px;height:120px;margin-top: 10px;">
+		<ion-slide *ngFor="let pic of Pic" >
+			<img src="{{pic.image}}" style="width:85px;height:80px;"/>
+			<img src="{{pic.img}}" style="width:85px;height:80px;"/>
+			<img src="{{pic.i}}" style="width:85px;height:80px;"/>
+		</ion-slide>
+	</ion-slides> -->
+
+	<ion-grid style="padding: 0px;margin-top:10px;margin-bottom:10px;height:30%;">
+		<ion-row  style="padding: 0px;height:100%;">
+			<ion-col  style="padding: 0px;height:100%;">
+				<img (click)="1()" src="http://chanasma.org/slides/level2/1/2-1.jpg" style="height:100%;"/>
+			</ion-col>
+			<ion-col  style="padding: 0px;">
+				<img (click)="2()" src="http://chanasma.org/slides/level2/2/2-1.jpg" style="height:100%;"/>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<ion-grid style="padding: 0px;margin-top:10px;margin-bottom:20px;height:25%;">
+		<ion-row  style="padding: 0px;height:100%;">
+			<ion-col  style="padding: 0px;height:100%;">
+				<ion-card style="height: 100%;width: 100%;margin-left:0px;"> 
+					<img (click)="3()" src="http://chanasma.org/slides/level3/1-1.png" style="height:100%;width:100%;"/>
+				</ion-card>
+			</ion-col>
+			<ion-col  style="padding: 0px;height:100%;">
+				<ion-card style="height: 100%;width: 100%;margin-left:0px;">
+					<img (click)="4()" src="http://chanasma.org/slides/level3/2-1.png" style="height:100%;width:100%;"/>	
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<ion-grid style="padding: 0px;margin:0px;margin-top:40px;margin-bottom:10px;height:20%;">
+		<ion-row  style="padding: 0px;margin:0px;">
+			<ion-col col-4 style="padding: 0px;margin:0px;">
+				<ion-card (click)="5()" style="padding: 3px;margin:0px;background-color: #43555F;color:#4FBFA8;font-size: 14px;width:96%;height:100%;" >SHREE ARAVINDBHAI SUKHADIYA PARIVAR</ion-card>
+			</ion-col>
+			<ion-col col-4 style="padding: 0px;margin:0px;">
+				<ion-card (click)="6()" style="padding: 3px;margin:0px;background-color: #43555F;color:#4FBFA8;font-size: 14px;width:96%;height:100%;">SHREE GOVINDLAL POPATLAL SHAH PARIVAR</ion-card>
+			</ion-col>
+			<ion-col col-4 style="padding: 0px;margin:0px;">
+				<ion-card (click)="7()" style="padding: 3px;margin:0px;background-color: #43555F;color:#4FBFA8;font-size: 14px;width:96%;height:100%;">SHREE RAJNIKANTBHAI KESHAVLAL SHAH PARIVAR</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	
+
+</ion-content>
